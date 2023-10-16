@@ -2,12 +2,12 @@
 name: Node CI
 
 # Trigger the workflow on push or pull request
-on:
-  - push
-  - pull_request
+# on:
+#   - push
+#   - pull_request
 
 env:
-  CI: false
+  CI: true
 
 jobs:
   build:
