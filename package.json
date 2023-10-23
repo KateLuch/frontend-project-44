@@ -5,7 +5,8 @@
   "description": "[![Actions Status](https://github.com/KateLuch/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/KateLuch/frontend-project-44/actions)",
   "bin": {
     "brain-even": "bin/brain-even.js",
-    "brain-gcd": "bin/brain-gcd.js"
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js"
   },
   "main": "index.js",
   "scripts": {
