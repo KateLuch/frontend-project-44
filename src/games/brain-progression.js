@@ -23,7 +23,10 @@ const playBrainProgression = () => {
     j += progressionStep;
     resultingProgression += `${isIndex} `;
   }
-  return [resultingProgression, missingNum.toString()];
+  const question = resultingProgression.toString();
+  const correctAnswer = missingNum.toString();
+
+  return [question, correctAnswer];
 };
 
 startGame(gameDescription, playBrainProgression);
