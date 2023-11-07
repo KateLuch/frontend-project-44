@@ -13,7 +13,7 @@ const playBrainProgression = () => {
     progression.push(currentNum);
     currentNum += progressionStep;
   }
-  const missingNumIndex = getRandomInt(0, progressionLength);
+  const missingNumIndex = getRandomInt(0, progressionLength - 1);
   const missingNum = progression[missingNumIndex];
   let resultingProgression = '';
   let j = firstNumber;
