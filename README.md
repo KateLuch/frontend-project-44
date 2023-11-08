@@ -3,21 +3,32 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/14b406e1e8e4f97db484/maintainability)](https://codeclimate.com/github/KateLuch/frontend-project-44/maintainability)
 
-How to install the project:
+# Description
+This is the first project called Brain Games. It includes five games where a player needs to answer 3 questions correctly. In case a wrong answer is given, game is over.
+
+# How to install the project:
 git clone https://github.com/KateLuch/frontend-project-44
 
 make install
 
-How to start a game:
+# How to start games:
+These are the commands to start each of the 5 games:
 
+* **brain-even** - a user needs to identify if a given number is even;
+* **brain-gcd** - a user needs to identify what the GCD of two given number is;
+* **brain-progression** - a user needs to identify what number is missing in the progression;
+* **brain-prime** - a user needs to identify if a given number is prime;
+* **brain-calc** - a user needs to find a sum, difference, or product of two given numbers. 
 
+# Showcase:
 
-[![Project 1, brain-even](https://asciinema.org/a/xNVRGoQQ9IFkKFqSMpjZe0o4l.svg)](https://asciinema.org/a/xNVRGoQQ9IFkKFqSMpjZe0o4l)
+[![brain-even](https://asciinema.org/a/3ufdJSTpQmVDb6wXiN24SMU4a.svg)](https://asciinema.org/a/3ufdJSTpQmVDb6wXiN24SMU4a)
 
-[![Project 1, brain-calc](https://asciinema.org/a/XRFzGhUi8VsONsy88g5tYGNjy.svg)](https://asciinema.org/a/XRFzGhUi8VsONsy88g5tYGNjy)
+[![brain-gcd](https://asciinema.org/a/8T4zJN0Yp6vW50M0mgyIzAQ1G.svg)](https://asciinema.org/a/8T4zJN0Yp6vW50M0mgyIzAQ1G)
 
-[![Project 1, brain-gcd](https://asciinema.org/a/aYiU7L0zI4ivrfWVaDjC5f6HA.svg)](https://asciinema.org/a/aYiU7L0zI4ivrfWVaDjC5f6HA)
+[![brain-progression](https://asciinema.org/a/WJwMD03SgCW2BEcUrIt1NucjX.svg)](https://asciinema.org/a/WJwMD03SgCW2BEcUrIt1NucjX)
 
-[![Project 1, brain-progression](https://asciinema.org/a/22MlAwy8eycKv9GjxY5qrph88.svg)](https://asciinema.org/a/22MlAwy8eycKv9GjxY5qrph88)
+[![brain-prime](https://asciinema.org/a/ZB8Chnv83PMskj8vR4OKKQy9W.svg)](https://asciinema.org/a/ZB8Chnv83PMskj8vR4OKKQy9W)
 
-[![Project 1, brain-prime](https://asciinema.org/a/dfKuD6Rn6aIadnYvFTni7iDJs.svg)](https://asciinema.org/a/dfKuD6Rn6aIadnYvFTni7iDJs)
+[![brain-calc](https://asciinema.org/a/GSHMXgRDeJ3foAjyWuaRy8RJh.svg)](https://asciinema.org/a/GSHMXgRDeJ3foAjyWuaRy8RJh)
+
