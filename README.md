@@ -22,13 +22,18 @@ These are the commands to start each of the 5 games:
 
 # Showcase:
 
+1. ### brain-even
 [![brain-even](https://asciinema.org/a/3ufdJSTpQmVDb6wXiN24SMU4a.svg)](https://asciinema.org/a/3ufdJSTpQmVDb6wXiN24SMU4a)
 
+2. ### brain-gcd
 [![brain-gcd](https://asciinema.org/a/8T4zJN0Yp6vW50M0mgyIzAQ1G.svg)](https://asciinema.org/a/8T4zJN0Yp6vW50M0mgyIzAQ1G)
 
+3. ### brain-progression
 [![brain-progression](https://asciinema.org/a/WJwMD03SgCW2BEcUrIt1NucjX.svg)](https://asciinema.org/a/WJwMD03SgCW2BEcUrIt1NucjX)
 
+4. ### brain-prime
 [![brain-prime](https://asciinema.org/a/ZB8Chnv83PMskj8vR4OKKQy9W.svg)](https://asciinema.org/a/ZB8Chnv83PMskj8vR4OKKQy9W)
 
+5. ### brain-calc
 [![brain-calc](https://asciinema.org/a/GSHMXgRDeJ3foAjyWuaRy8RJh.svg)](https://asciinema.org/a/GSHMXgRDeJ3foAjyWuaRy8RJh)
 
