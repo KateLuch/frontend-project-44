@@ -1,9 +1,10 @@
-import { startGame, getRandomInt } from '../index.js';
+import startGame from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
-const gameDescription = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
-const getCalculation = (num1, num2, action) => {
-  switch (action) {
+const calculate = (num1, num2, operator) => {
+  switch (operator) {
     case '+':
       return num1 + num2;
     case '-':
@@ -11,21 +12,21 @@ const getCalculation = (num1, num2, action) => {
     case '*':
       return num1 * num2;
     default:
-      return 'error';
+      throw new Error(`Unknown ${operator}!`);
   }
 };
 
-const playBrainCalc = () => {
-  const actions = ['+', '-', '*'];
-  const randomNumber1 = getRandomInt(0, 25);
-  const randomNumber2 = getRandomInt(0, 25);
-  const randomIndex = getRandomInt(0, actions.length - 1);
-  const chosenAction = actions[randomIndex];
-  const question = `${randomNumber1} ${chosenAction} ${randomNumber2}`;
-  const correctAnswer = (getCalculation(randomNumber1, randomNumber2, chosenAction)).toString();
+const generateRound = () => {
+  const operators = ['+', '-', '*'];
+  const num1 = getRandomNumber(0, 25);
+  const num2 = getRandomNumber(0, 25);
+  const index = getRandomNumber(0, operators.length - 1);
+  const chosenOperator = operators[index];
+  const question = `${num1} ${chosenOperator} ${num2}`;
+  const correctAnswer = (calculate(num1, num2, chosenOperator)).toString();
   return [question, correctAnswer];
 };
 
-startGame(gameDescription, playBrainCalc);
+startGame(description, generateRound);
 
-export default playBrainCalc;
+export default generateRound;

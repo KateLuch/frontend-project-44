@@ -1,19 +1,20 @@
-import { startGame, getRandomInt } from '../index.js';
+import startGame from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
-const gameDescription = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
-const playBrainProgression = () => {
-  const firstNumber = getRandomInt(1, 20);
+const generateRound = () => {
+  const firstNumber = getRandomNumber(1, 20);
   const progression = [firstNumber];
-  const progressionLength = getRandomInt(5, 10);
-  const progressionStep = getRandomInt(1, 5);
+  const progressionLength = getRandomNumber(5, 10);
+  const progressionStep = getRandomNumber(1, 5);
   let currentNum = firstNumber + progressionStep;
 
   for (let i = 1; i < progressionLength; i += 1) {
     progression.push(currentNum);
     currentNum += progressionStep;
   }
-  const missingNumIndex = getRandomInt(0, progressionLength - 1);
+  const missingNumIndex = getRandomNumber(0, progressionLength - 1);
   const missingNum = progression[missingNumIndex];
   let resultingProgression = '';
   let j = firstNumber;
@@ -23,12 +24,13 @@ const playBrainProgression = () => {
     j += progressionStep;
     resultingProgression += `${isIndex} `;
   }
+  // progression[missingNumIndex] = '..';
   const question = resultingProgression.toString();
   const correctAnswer = missingNum.toString();
 
   return [question, correctAnswer];
 };
 
-startGame(gameDescription, playBrainProgression);
+startGame(description, generateRound);
 
-export default playBrainProgression;
+export default generateRound;

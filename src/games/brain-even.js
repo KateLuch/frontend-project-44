@@ -1,13 +1,14 @@
-import { startGame, getRandomInt } from '../index.js';
+import startGame from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
-const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const playBrainEven = () => {
-  const question = getRandomInt(1, 100);
-  const correctAnswer = question % 2 === 0 ? 'yes' : 'no';
-  return [question, correctAnswer];
+const generateRound = () => {
+  const question = getRandomNumber(1, 100);
+  const isEven = question % 2 === 0 ? 'yes' : 'no';
+  return [question, isEven];
 };
 
-startGame(gameDescription, playBrainEven);
+startGame(description, generateRound);
 
-export default playBrainEven;
+export default generateRound;
