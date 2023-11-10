@@ -15,11 +15,9 @@ const generateRound = () => {
     currentNum += progressionStep;
   }
   const missingNumIndex = getRandomNumber(0, progressionLength - 1);
-  const part1 = progression.slice(0, missingNumIndex).join(' ');
-  const part2 = progression.slice(missingNumIndex + 1).join(' ');
-  const question = `${part1} .. ${part2}`;
-  const correctAnswer = (progression[missingNumIndex]).toString();
-
+  const correctAnswer = progression[missingNumIndex].toString();
+  progression[missingNumIndex] = '..';
+  const question = progression.join(' ');
   return [question, correctAnswer];
 };
 
