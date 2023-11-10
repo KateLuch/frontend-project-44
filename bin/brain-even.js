@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-import generateRound from '../src/games/brain-even.js';
+import runBrainEven from '../src/games/brain-even.js';
+
+runBrainEven();

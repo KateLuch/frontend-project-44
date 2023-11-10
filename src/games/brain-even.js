@@ -9,6 +9,8 @@ const generateRound = () => {
   return [question, isEven];
 };
 
-startGame(description, generateRound);
+const runBrainEven = () => {
+  startGame(description, generateRound);
+};
 
-export default generateRound;
+export default runBrainEven;

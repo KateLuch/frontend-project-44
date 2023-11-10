@@ -1,7 +1,7 @@
 import startGame from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const gameDescription = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const getGCD = (num1, num2) => {
   let number1 = num1;
@@ -24,6 +24,8 @@ const generateRound = () => {
   return [question, correctAnswer];
 };
 
-startGame(gameDescription, generateRound);
+const runBrainGcd = () => {
+  startGame(description, generateRound);
+};
 
-export default generateRound;
+export default runBrainGcd;

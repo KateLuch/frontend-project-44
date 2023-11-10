@@ -15,22 +15,16 @@ const generateRound = () => {
     currentNum += progressionStep;
   }
   const missingNumIndex = getRandomNumber(0, progressionLength - 1);
-  const missingNum = progression[missingNumIndex];
-  let resultingProgression = '';
-  let j = firstNumber;
-  let isIndex;
-  while (j <= progression[progressionLength - 1]) {
-    isIndex = j === missingNum ? '..' : `${j}`;
-    j += progressionStep;
-    resultingProgression += `${isIndex} `;
-  }
-  // progression[missingNumIndex] = '..';
-  const question = resultingProgression.toString();
-  const correctAnswer = missingNum.toString();
+  const part1 = progression.slice(0, missingNumIndex).join(' ');
+  const part2 = progression.slice(missingNumIndex + 1).join(' ');
+  const question = `${part1} .. ${part2}`;
+  const correctAnswer = (progression[missingNumIndex]).toString();
 
   return [question, correctAnswer];
 };
 
-startGame(description, generateRound);
+const runBrainProgression = () => {
+  startGame(description, generateRound);
+};
 
-export default generateRound;
+export default runBrainProgression;

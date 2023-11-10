@@ -27,6 +27,8 @@ const generateRound = () => {
   return [question, correctAnswer];
 };
 
-startGame(description, generateRound);
+const runBrainCalc = () => {
+  startGame(description, generateRound);
+};
 
-export default generateRound;
+export default runBrainCalc;

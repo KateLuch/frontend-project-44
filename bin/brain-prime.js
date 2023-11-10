@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-import generateRound from '../src/games/brain-prime.js';
+import runBrainPrime from '../src/games/brain-prime.js';
+
+runBrainPrime();
