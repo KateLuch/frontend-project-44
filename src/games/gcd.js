@@ -17,11 +17,11 @@ const getGCD = (num1, num2) => {
 };
 
 const generateRound = () => {
-  const num1 = getRandomNumber(1, 100);
-  const num2 = getRandomNumber(1, 100);
-  const question = `${num1} ${num2}`;
-  const correctAnswer = (getGCD(num1, num2)).toString();
-  return [question, correctAnswer];
+  const number1 = getRandomNumber(1, 100);
+  const number2 = getRandomNumber(1, 100);
+  const question = `${number1} ${number2}`;
+  const answer = getGCD(number1, number2).toString();
+  return [question, answer];
 };
 
 const runBrainGcd = () => {
